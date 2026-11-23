@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>Contact Me - Favorite Foods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Contact Me</h1>
+  <p>Feel free to send me a message!</p>
+</header>
+
+<nav aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="contact.html" aria-current="page">Contact</a>
+</nav>
+
+<main>
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>
+      Have a favorite food you want to share?
+      Send me a message!
+    </p>
+
+    <form id="contact-form">
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name"
+               name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email"
+               name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message"
+                  rows="5" required></textarea>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+      <p id="form-status" role="status"
+         aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>My First Website | Web Development</p>
+</footer>
+
+<script>
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    status.textContent =
+      "Your form looks good! This is a demo, " +
+      "so the message was not sent.";
+  });
+</script>
+
+</body>
+</html>

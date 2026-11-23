@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>About Me - Favorite Foods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>About Me</h1>
+  <p>Welcome to my Favorite Foods website!</p>
+</header>
+
+<nav aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html" aria-current="page">About Me</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <section class="about-section">
+    <h2>About My Website</h2>
+    <p>
+      I made this website for my web development
+      class. I wanted to share three of my
+      favorite foods: asada tacos, pho,
+      and asada burritos.
+    </p>
+
+    <h2>Why I Chose Food</h2>
+    <p>
+      I chose this topic because I enjoy
+      trying different foods. Food is
+      something that brings people together.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>My First Website | Web Development</p>
+</footer>
+
+</body>
+</html>

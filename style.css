@@ -1,0 +1,228 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+    color: #234d20;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Heading styling */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 48px 16px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 0 16px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 24px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 32px 16px;
+}
+
+/* Flexbox layout */
+.food-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.food-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.food-card h3 {
+    margin-top: 0;
+}
+
+/* About section */
+.about {
+    text-align: center;
+    padding: 40px 16px;
+}
+
+footer {
+    text-align: center;
+    background-color: #234d20;
+    color: white;
+    padding: 16px;
+}
+
+/* Tablet responsive design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .food-container {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .food-card {
+        flex: 1 1 40%;
+    }
+}
+
+/* Phone responsive design */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 32px 16px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding: 16px;
+    }
+
+    .food-container {
+        flex-direction: column;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+}
+/* Favorite food cards */
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.food-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1 1 220px;
+  max-width: 300px;
+}
+
+/* About and other sections */
+.about-section,
+.favorites,
+.fun-facts {
+  background-color: white;
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+/* Navigation */
+nav {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #234d20;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #234d20;
+  color: white;
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .food-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-card {
+    width: 100%;
+  }
+}
+.contact-section {
+  background-color: white;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+fieldset {
+  border: 2px solid #234d20;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font: inherit;
+}
+
+button {
+  background-color: #234d20;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #173615;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
