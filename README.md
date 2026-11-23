@@ -26,4 +26,18 @@ Color contrast results: [Add your results after checking your colors with WebAIM
 Conclusion
 
 I made these changes to make my website look better and easier to use. I wanted everything to be simple, organized, and easy to understand.
+Accessibility Fixes
+
+I worked on fixing the accessibility problems on my website.
+
+I added alternative text to my food image so screen readers can describe it.
+I added labels to my contact form so people know what to type.
+I made sure my pages have titles so visitors know which page they are on.
+I used required fields so people know what information they need to fill out.
+Color Contrast
+
+I checked my website colors using the WebAIM Contrast Checker.
+
+Results: [Add whether your colors passed WCAG AA after testing.]
+
 
